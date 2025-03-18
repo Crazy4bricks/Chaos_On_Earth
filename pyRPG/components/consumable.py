@@ -3,11 +3,11 @@ from __future__ import annotations
 from typing import Optional, TYPE_CHECKING
 
 from core import actions
-import color
+import utils.color as color
 import components.ai
 import components.inventory
 from components.base_component import BaseComponent
-from exceptions import Impossible
+from utils.exceptions import Impossible
 from core.input_handlers import (
     ActionOrHandler,
     AreaRangedAttackHandler,

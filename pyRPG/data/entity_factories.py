@@ -5,7 +5,7 @@ from components.fighter import Fighter
 from components.inventory import Inventory
 from components.level import Level
 from core.entity import Actor, Item
-import color
+from utils import color
 
 
 player = Actor(

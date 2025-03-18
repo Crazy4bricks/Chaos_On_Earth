@@ -5,9 +5,8 @@ from typing import Dict, Iterator, List, Tuple, TYPE_CHECKING
 
 import tcod
 
-import entity_factories
+from data import entity_factories, tile_types
 from core.game_map import GameMap
-import tile_types
 
 
 if TYPE_CHECKING:
