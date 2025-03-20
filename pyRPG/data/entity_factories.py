@@ -91,3 +91,5 @@ chain_mail = Item(
     name="ChainMail",
     equippable=equippable.LeatherArmor()
 )
+
+# Materials
