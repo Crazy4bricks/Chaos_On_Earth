@@ -146,7 +146,6 @@ class Item(Entity):
         description: Optional[str] = None,
         consumable: Optional[Consumable] = None,
         equippable: Optional[Equippable] = None,
-        material
     ):
         super().__init__(
             x=x,
