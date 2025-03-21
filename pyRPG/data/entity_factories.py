@@ -88,8 +88,19 @@ leather_armor = Item(
 chain_mail = Item(
     char="[",
     color=color.bright_cyan,
-    name="ChainMail",
-    equippable=equippable.LeatherArmor()
+    name="Chain Mail",
+    equippable=equippable.ChainMail()
 )
 
 # Materials
+metal_scrap = Item(
+    char="*",
+    color=color.gray,
+    name="Metal Scrap",
+    description="Structural metal, ripped from its source for new purpose.",
+)
+wood_scrap = Item(
+    char="*",
+    color=color.brown,
+    name="Wood Scrap"
+)

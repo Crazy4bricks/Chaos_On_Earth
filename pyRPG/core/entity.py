@@ -143,8 +143,10 @@ class Item(Entity):
         char: str = "?",
         color: Tuple[int, int, int] = (255, 255, 255),
         name: str = "<Unnamed>",
+        description: Optional[str] = None,
         consumable: Optional[Consumable] = None,
         equippable: Optional[Equippable] = None,
+        material
     ):
         super().__init__(
             x=x,
@@ -152,6 +154,7 @@ class Item(Entity):
             char=char,
             color=color,
             name=name,
+            description=description,
             blocks_movement=False,
             render_order=RenderOrder.ITEM,
         )
