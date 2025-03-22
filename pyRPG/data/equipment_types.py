@@ -8,6 +8,7 @@ class MaterialType(Enum):
     FABRIC = auto() #Woven material
     METALLIC = auto() #
     WOODEN = auto()
+    PLASTIC =
     METAMATERIAL = auto() #Strange material, locally made
     EXOTIC = auto() #Otherworldly material, origins from abroad
     
