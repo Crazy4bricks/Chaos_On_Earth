@@ -58,3 +58,53 @@ def render_names_at_mouse_location(
     )
 
     console.print(x=x, y=y, string=names_at_mouse_location)
+
+class Panel:
+    def __init__(
+        self,
+        console: Console,
+        x: int,
+        y: int,
+        width: int,
+        height: int,
+        title: str='',
+        bg: Tuple[int,int,int] = (0,0,0),
+        fg: Tuple[int,int,int] = (255,255,255),
+    ):
+        self.console = console
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+        self.title = title
+        self.bg = bg
+        self.fg = fg
+    
+    def display():
+        self.console.draw_frame(self.x,self.y,self.width,self.height,self.title,self.fg,self.bg)
+        self.console.print_box(
+            self.x, self.y, self.width, 1, self.title, alignment=tcod.CENTER
+        )
+
+class Mapdisplay(Panel):
+    def __init__(
+        self,
+        console: Console,
+        x: int,
+        y: int,
+        width: int,
+        height: int,
+        title: str='',
+        bg: Tuple[int,int,int] = (0,0,0),
+        fg: Tuple[int,int,int] = (255,255,255),
+    ):
+        super().__init__(
+            console=console,
+            x=x,
+            y=y,
+            width=width,
+            height=height,
+            title=title,
+            bg=bg,
+            fg=fg,
+        )

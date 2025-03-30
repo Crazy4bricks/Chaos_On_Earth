@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import random
+from math import sqrt
+from collections import OrderedDict
 from typing import Dict, Iterator, List, Tuple, TYPE_CHECKING
 
 import tcod

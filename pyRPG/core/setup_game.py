@@ -14,6 +14,7 @@ from core.engine import Engine
 from data import entity_factories
 from core.game_map import GameWorld
 import core.input_handlers as input_handlers
+from rendering.render_functions import Panel
 
 
 # Load the background image and remove the alpha channel.
@@ -86,6 +87,8 @@ class MainMenu(input_handlers.BaseEventHandler):
             fg=color.menu_title,
             alignment=tcod.CENTER,
         )
+
+        
         console.print(
             console.width // 2,
             console.height - 2,
@@ -93,6 +96,7 @@ class MainMenu(input_handlers.BaseEventHandler):
             fg=color.menu_title,
             alignment=tcod.CENTER,
         )
+        
 
         menu_width = 24
         for i, text in enumerate(

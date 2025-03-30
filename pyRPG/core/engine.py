@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING
 from tcod.console import Console
 from tcod.map import compute_fov
 
-from utils import exceptions
+import utils.exceptions as exceptions
 from utils.message_log import MessageLog
 from rendering import render_functions 
 
@@ -74,5 +74,5 @@ class Engine:
         with open(filename, "wb") as f:
             f.write(save_data)
 
-class Panel:
-    def init
+
+        
