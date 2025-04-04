@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Final 
+from typing import Final, Self
 
 import attrs
+import self
 import tcod.ecs.callbacks
 from tcod.ecs import Entity
 
@@ -16,7 +17,7 @@ class Position:
     x: int
     y: int
 
-    def __add__(self, direction: tuple[int, int]) -> self:
+    def __add__(self, direction: tuple[int, int]) -> Self:
         """Add a vector to this position"""
         x, y = direction
         return self.__class__(self.x + x, self.y + y)
@@ -42,3 +43,16 @@ class Graphic:
     bg: tuple[int, int, int] = (0, 0, 0)
 
 
+@attrs.define(frozen=True)
+class Attribute:
+    base: int
+    modifier: int
+    total: int
+
+@attrs.define(frozen=True)
+class Attributes:
+    grit: Attribute
+    speed: Attribute
+    technique: Attribute
+    ego: Attribute
+    
