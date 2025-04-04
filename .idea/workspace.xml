@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="088ee775-fc59-41cb-b9a0-faae771c4a97" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/game/procgen/cell_auto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/.vs/PythonSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/.vs/pyRPG/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/Haberdash_curses_12x12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/assets/Hebrew_curses_12x12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/assets/Items.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/assets/Terrain Tiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/assets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/ai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/base_component.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/consumable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/equipment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/equippable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/fighter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/insightful.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/inventory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/components/level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/ecs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/core/actions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/core/engine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/core/entity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/core/game_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/core/input_handlers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/core/setup_game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/ecs/components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/data/entity_factories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/data/equipment_types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/data/recipes.JSON" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/data/tile_types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/dejavu10x10_gs_tc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/menu_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/rendering/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/ecs/tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/rendering/render_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/rendering/render_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/procgen/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/utils/color.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/utils/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/utils/message_log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/worldgen/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/procgen/basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyRPG/worldgen/procgen.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2v2cDryvOzvAo66UhMfWFtiRdXS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.engine.executor": "Debug",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "ReworkedECS",
+    "last_opened_file_path": "C:/Users/15208/Documents/GitHub/ASCIIRPG/main.py"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\15208\Documents\GitHub\ASCIIRPG\pyRPG\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\15208\Documents\GitHub\ASCIIRPG\game\procgen" />
+      <recent name="C:\Users\15208\Documents\GitHub\ASCIIRPG\assets" />
+      <recent name="C:\Users\15208\Documents\GitHub\ASCIIRPG\pyRPG\ecs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ASCIIRPG" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="088ee775-fc59-41cb-b9a0-faae771c4a97" name="Changes" comment="" />
+      <created>1743346492908</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743346492908</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyRPG/ecs/components/components.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pyRPG/core/game_map.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/game/core/actions.py</url>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="__exception__[1]" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
