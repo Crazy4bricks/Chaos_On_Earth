@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Final, Self
+from typing import Final, Self, Optional
 
 import attrs
 import self
@@ -21,6 +21,7 @@ class Position:
         """Add a vector to this position"""
         x, y = direction
         return self.__class__(self.x + x, self.y + y)
+
 
 
 @tcod.ecs.callbacks.register_component_changed(component=Position)
@@ -55,4 +56,3 @@ class Attributes:
     speed: Attribute
     technique: Attribute
     ego: Attribute
-    

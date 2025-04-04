@@ -32,8 +32,10 @@ def main() -> None:
     npc.components[Graphic] = Graphic("N", (255,255,255))
     npc.tags |= {IsActor}
 
-    CA = CellularAutomata()
-    game_map = CA.generate_dungeon(map_width,map_height)
+    game_map = generate_dungeon(
+        max_rooms=,
+        map_height,
+    )
 
     engine = Engine(world, event_handler, game_map)
 
@@ -44,7 +46,7 @@ def main() -> None:
         title="RogueWorld",
         vsync=True,
     ) as context:
-        root_console = tcod.Console(80, 50, order="F")
+        root_console = tcod.console.Console(80, 50, order="F")
         while True:
             engine.render(console=root_console, context=context)
 
