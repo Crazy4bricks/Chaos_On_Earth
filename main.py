@@ -14,6 +14,13 @@ def main() -> None:
 
     map_width = 80
     map_height = 45
+
+    room_max_size = 10
+    room_min_size = 6
+    max_rooms = 30
+
+    max_monsters_per_room = 3
+
     tileset = tcod.tileset.load_tilesheet(
         "assets/Haberdash_curses_12x12.png", 16, 16, tcod.tileset.CHARMAP_CP437
     )
@@ -27,17 +34,17 @@ def main() -> None:
     player.components[Graphic] = Graphic("@", (255,255,255))
     player.tags |= {IsPlayer, IsActor}
 
-    npc = world[object()]
-    npc.components[Position] = Position(int(map_width/2)-1, int(map_height/2)-1)
-    npc.components[Graphic] = Graphic("N", (255,255,255))
-    npc.tags |= {IsActor}
-
     game_map = generate_dungeon(
-        max_rooms=,
-        map_height,
+        max_rooms=max_rooms,
+        room_min_size=room_min_size,
+        room_max_size=room_max_size,
+        map_width=map_width,
+        map_height=map_height,
+        max_monsters_per_room=max_monsters_per_room,
+        entities=world,
     )
 
-    engine = Engine(world, event_handler, game_map)
+    engine = Engine(event_handler, game_map)
 
     with tcod.context.new_terminal(
         screen_width,

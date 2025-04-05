@@ -5,6 +5,7 @@ from typing import Set, Iterable, Any
 
 from tcod.context import Context
 from tcod.console import Console
+from tcod.map import compute_fov
 from tcod.ecs import Registry
 
 from game.core.game_map import GameMap
@@ -14,10 +15,10 @@ from game.ecs.tags import IsPlayer
 
 
 class Engine:
-    def __init__(self, entities: Registry, event_handler: EventHandler, game_map: GameMap):
-        self.entities = entities
+    def __init__(self, event_handler: EventHandler, game_map: GameMap):
         self.event_handler = event_handler
         self.game_map = game_map
+        self.update_fov()
 
     def handle_events(self, events: Iterable[Any]) -> None:
         for event in events:
@@ -28,17 +29,25 @@ class Engine:
             for player in self.entities.Q.all_of(tags=[IsPlayer]):
                 action.perform(self, player)
 
+            self.update_fov()
+
+
+    def update_fov(self):
+        """Recompute the visible area based on the players point of view."""
+        for player in self.entities.Q.all_of(tags=[IsPlayer]):
+            position = player.components[Position]
+            self.game_map.visible[:] = compute_fov(
+                self.game_map.tiles["transparent"],
+                (position.x, position.y),
+                radius=8,
+            )
+            # If a tile is "visible" it should be added to "explored".
+            self.game_map.explored |= self.game_map.visible
+
 
     def render(self, console: Console, context: Context) -> None:
         self.game_map.render(console)
 
-        for entity in self.entities.Q.all_of(components=(Position, Graphic)):
-            position = entity.components[Position]
-            if not (0 <= position.x < console.width and 0 <= position.y < console.height):
-                continue
-            graphic = entity.components[Graphic]
-
-            console.print(x=position.x, y=position.y, string=graphic.char, fg=graphic.fg)
 
         context.present(console)
 

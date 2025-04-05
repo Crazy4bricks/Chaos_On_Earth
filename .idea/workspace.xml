@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc08037b-2169-43a1-92fe-b221193c25c4" name="Changes" comment="">
+    <list default="true" id="dc08037b-2169-43a1-92fe-b221193c25c4" name="Changes" comment="Added attributes">
+      <change afterPath="$PROJECT_DIR$/game/core/colors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/ecs/components.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/ecs/components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/game_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/core/tile_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/tile_types.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/ecs/tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/ecs/tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/procgen/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/procgen/basic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -14,6 +18,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,5 +118,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added attributes" />
     <option name="LAST_COMMIT_MESSAGE" value="Added attributes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/game/core/engine.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/game/core/game_map.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

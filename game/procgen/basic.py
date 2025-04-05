@@ -4,8 +4,9 @@ from game.core.game_map import GameMap
 from game.core import tile_types
 
 import tcod
-from tcod.ecs import Entity
+from tcod.ecs import Entity, Registry
 from game.ecs.components import Position
+import game.ecs.tags as tags
 from game.procgen.cell_auto import CellularAutomata
 
 
@@ -33,9 +34,30 @@ class RectangularRoom:
         """Return the inner area of this room as a 2D array index."""
         return slice(self.x1 + 1, self.x2), slice(self.y1 + 1, self.y2)
 
+    def intersects(self, other: "RectangularRoom") -> bool:
+        """Return True if this room overlaps with another RectangularRoom."""
+        return (
+            self.x1 <= other.x2
+            and self.x2 >= other.x1
+            and self.y1 <= other.y2
+            and self.y2 >= other.y1
+        )
 
 
+def place_entities(
+    room: RectangularRoom, dungeon: GameMap, max_monsters_per_room: int
+) -> None:
+    number_of_monsters = random.randint(0, max_monsters_per_room)
 
+    for i in range(number_of_monsters):
+        x = random.randint(room.x1 + 1, room.x2 - 1)
+        y = random.randint(room.y1 + 1, room.y2 - 1)
+
+        if not any(entity.components[Position].x == x and entity.components[Position].y == y for entity in dungeon.entities.Q.all_of(components=(Position))):
+            if random.random() < 0.8:
+                pass # TODO: Place an Orc here
+            else:
+                pass # TODO: Place a Troll here
 
 
 def tunnel_between(
@@ -62,9 +84,10 @@ def generate_dungeon(
         room_max_size: int,
         map_width: int,
         map_height: int,
-        player: Entity,
+        max_monsters_per_room: int,
+        entities: Registry,
 ) -> GameMap:
-    dungeon = GameMap(map_width, map_height)
+    dungeon = GameMap(map_width, map_height, entities)
 
     rooms: list[RectangularRoom] = []
 
@@ -88,11 +111,14 @@ def generate_dungeon(
         if len(rooms) == 0:
             # The first room, where the player starts.
             px, py = new_room.center
-            player.components[Position] = Position(px, py)
+            for player in entities.Q.all_of(tags=[tags.IsPlayer] ):
+                player.components[Position] = Position(px, py)
         else: # All rooms after the first.
             # Dig out a tunnel between this room and the previous one.
             for x, y in tunnel_between(rooms[-1].center, new_room.center):
                 dungeon.tiles[x, y] = tile_types.floor
+
+        place_entities(new_room, dungeon, max_monsters_per_room)
 
         # Finally, append the new room to the list
         rooms.append(new_room)
