@@ -53,7 +53,8 @@ def place_entities(
         x = random.randint(room.x1 + 1, room.x2 - 1)
         y = random.randint(room.y1 + 1, room.y2 - 1)
 
-        if not any(entity.components[Position].x == x and entity.components[Position].y == y for entity in dungeon.entities.Q.all_of(components=(Position))):
+        entities = dungeon.entities.Q.all_of(components=(Position,))
+        if not any((entity.components[Position].x == x and entity.components[Position].y == y) for entity in entities):
             if random.random() < 0.8:
                 pass # TODO: Place an Orc here
             else:

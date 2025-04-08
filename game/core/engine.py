@@ -26,7 +26,7 @@ class Engine:
             if action is None:
                 continue
 
-            for player in self.entities.Q.all_of(tags=[IsPlayer]):
+            for player in self.game_map.entities.Q.all_of(tags=[IsPlayer]):
                 action.perform(self, player)
 
             self.update_fov()
@@ -34,7 +34,7 @@ class Engine:
 
     def update_fov(self):
         """Recompute the visible area based on the players point of view."""
-        for player in self.entities.Q.all_of(tags=[IsPlayer]):
+        for player in self.game_map.entities.Q.all_of(tags=[IsPlayer]):
             position = player.components[Position]
             self.game_map.visible[:] = compute_fov(
                 self.game_map.tiles["transparent"],

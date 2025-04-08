@@ -17,7 +17,7 @@ class GameMap:
         self.explored = np.full((width, height), fill_value=False, order="F")
 
     def in_bounds(self, x: int, y: int) -> bool:
-        """Return True if x and y are inside of the bounds of this map."""
+        """Return True if x and y are inside the bounds of this map."""
         return 0 <= x < self.width and 0 <= y < self.height
 
     def render(self, console: Console) -> None:
@@ -37,7 +37,7 @@ class GameMap:
        for entity in self.entities.Q.all_of(components=(components.Position, components.Graphic)):
            position = entity.components[components.Position]
            # Only print entities that are in the FOV
-           if self.game_map.visible[position.x, position.y]:
+           if self.visible[position.x, position.y]:
                graphic = entity.components[components.Graphic]
                console.print(position.x, position.y, graphic.char, graphic.fg, graphic.bg)
 

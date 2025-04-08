@@ -56,3 +56,7 @@ class Attributes:
     speed: Attribute
     technique: Attribute
     ego: Attribute
+
+@attrs.define(frozen=True)
+class Name:
+    name: str
