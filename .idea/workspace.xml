@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc08037b-2169-43a1-92fe-b221193c25c4" name="Changes" comment="Added attributes">
-      <change afterPath="$PROJECT_DIR$/game/core/entity_factories.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/game_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/game_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/core/tile_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/core/tile_types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/ecs/components.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/ecs/components.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/procgen/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/game/procgen/basic.py" afterDir="false" />
-    </list>
+    <list default="true" id="afa14176-d43e-41de-9a53-996b7f5d5ca5" name="Changes" comment="I forgot" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,41 +20,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Crazy4bricks&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Crazy4bricks/Chaos_On_Earth.git&quot;,
-    &quot;accountId&quot;: &quot;61e03220-d845-4582-a71a-96b54cbe19c8&quot;
-  }
-}</component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2vF9zWdikjVytGA527gbrRzTgtj" />
+  <component name="ProjectId" id="2vkMaP98R0v71zw9QEgAwi5fTs4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Python.Run Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fighter.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/15208/Documents/GitHub/ASCIIRPG/main.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/15208/Documents/GitHub/ASCIIRPG&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\15208\Documents\GitHub\Chaos_On_EarthV2\src\map" />
+      <recent name="C:\Users\15208\Documents\GitHub\Chaos_On_EarthV2\src\ecs" />
+      <recent name="C:\Users\15208\Documents\GitHub\Chaos_On_EarthV2\game\ecs" />
+      <recent name="C:\Users\15208\Documents\GitHub\Chaos_On_EarthV2\game" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="Run Main" type="PythonConfigurationType" factoryName="Python">
-      <module name="ASCIIRPG" />
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Chaos_On_EarthV2" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +62,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,41 +82,42 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dc08037b-2169-43a1-92fe-b221193c25c4" name="Changes" comment="" />
-      <created>1743730218646</created>
+      <changelist id="afa14176-d43e-41de-9a53-996b7f5d5ca5" name="Changes" comment="" />
+      <created>1744684682072</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1743730218646</updated>
+      <updated>1744684682072</updated>
     </task>
+    <task id="LOCAL-00001" summary="Wall tile connectivity, looks nice now">
+      <option name="closed" value="true" />
+      <created>1744740943338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744740943338</updated>
+    </task>
+    <task id="LOCAL-00002" summary="I forgot">
+      <option name="closed" value="true" />
+      <created>1744816945836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744816945836</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I forgot">
+      <option name="closed" value="true" />
+      <created>1744817151643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744817151643</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added attributes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added attributes" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/game/core/engine.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/game/core/game_map.py</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Wall tile connectivity, looks nice now" />
+    <MESSAGE value="I forgot" />
+    <option name="LAST_COMMIT_MESSAGE" value="I forgot" />
   </component>
 </project>
