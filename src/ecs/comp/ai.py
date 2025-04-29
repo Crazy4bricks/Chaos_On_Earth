@@ -77,6 +77,7 @@ class HostileEnemy(BaseAI):
         return WaitAction(self.entity).perform()
 
 
+
 class ConfusedEnemy(BaseAI):
     """
     A confused enemy will stumble around aimlessly for a given number of turns, then revert back to its previous AI.
@@ -119,8 +120,4 @@ class ConfusedEnemy(BaseAI):
                 direction_y,
             ).perform()
 
-@attrs.define(frozen=True)
-class WantsToPickupItem():
-    """Entity wants to pick up an item."""
-    collected_by: Entity
-    item: Entity
+
